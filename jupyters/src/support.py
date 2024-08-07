@@ -132,3 +132,25 @@ def classify_correlations(correlation_df):
     # Return None, as we're only printing the results
     return None
     # return weak_correlations, moderate_correlations, strong_correlations
+
+
+def categorize(education_level, group_a, group_b):
+    """
+    Categorizes education levels into two groups based on provided lists.
+    
+    Parameters:
+    - education_level: The education level to categorize.
+    - group_a: List of education levels considered as lower.
+    - group_b: List of education levels considered as higher.
+    
+    Returns:
+    - 'group_a' for lower education levels
+    - 'group_b' for higher education levels
+    - 'Unknown' for values not in provided lists
+    """
+    if education_level in group_a:
+        return 'group_a'
+    elif education_level in group_b:
+        return 'group_b'
+    else:
+        return 'Unknown'  # To handle values that do not match the defined groups
