@@ -30,7 +30,7 @@ En esta evaluación se utilizaron diversas herramientas y librerías para el an�
 
 #### Visual Studio Code
 
-<img src="images/vscode_logo.png" alt="VS Code Logo" width="100"/>
+<img src="images/vsc_logo.png" alt="VS Code Logo" width="100"/>
 
 [Visual Studio Code](https://code.visualstudio.com/) es un editor de código fuente desarrollado por Microsoft. Es una herramienta poderosa y extensible, ideal para programar en diversos lenguajes y gestionar proyectos de datos. En esta evaluación, se utilizó Visual Studio Code para escribir, ejecutar y depurar el código Python necesario para el análisis de datos y la visualización.
 
