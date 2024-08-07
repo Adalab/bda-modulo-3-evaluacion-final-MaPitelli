@@ -123,4 +123,4 @@ Se utilizaron diversas técnicas de visualización para responder preguntas espe
 
 ---
 
-Estos temas demuestran un enfoque integral para el análisis de datos, abarcando desde la exploración y limpieza hasta la visualización y análisis estadístico. Esta metodología permite obtener una comprensión detallada de los datos y tomar decisiones basadas en resultados sólidos y bien fundamentados. Para ver más ejemplos de este tipo de análisis y explorar en detalle mi trabajo, te invito a visitar el repositorio del proyecto: ➡️ [Enlace al repositorio](https://github.com/Adalab/bda-modulo-3-evaluacion-final-MaPitelli)
+Estos temas demuestran un enfoque integral para el análisis de datos, abarcando desde la exploración y limpieza hasta la visualización y análisis estadístico. Esta metodología permite obtener una comprensión detallada de los datos y tomar decisiones basadas en resultados sólidos y bien fundamentados. Para ver más ejemplos de este tipo de análisis y explorar en detalle mi trabajo, te invito a visitar el repositorio del proyecto: ➡️ [Enlace al repositorio](https://github.com/Adalab/bda-modulo-3-evaluacion-final-MaPitelli/tree/main/jupyters)
