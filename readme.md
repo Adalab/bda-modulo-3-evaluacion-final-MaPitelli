@@ -30,13 +30,13 @@ En esta evaluación se utilizaron diversas herramientas y librerías para el an�
 
 #### Visual Studio Code
 
-![VS Code Logo](images/vsc_logo.png)
+<img src="images/vscode_logo.png" alt="VS Code Logo" width="100"/>
 
 [Visual Studio Code](https://code.visualstudio.com/) es un editor de código fuente desarrollado por Microsoft. Es una herramienta poderosa y extensible, ideal para programar en diversos lenguajes y gestionar proyectos de datos. En esta evaluación, se utilizó Visual Studio Code para escribir, ejecutar y depurar el código Python necesario para el análisis de datos y la visualización.
 
 #### Jupyter Notebooks
 
-<img src="images/jupyter_logo.png" alt="Jupyter Logo" width="150"/>
+<img src="images/jupyter_logo.png" alt="Jupyter Logo" width="100"/>
 
 [Jupyter Notebooks](https://jupyter.org/) En esta evaluación, se utilizaron archivos Jupyter Notebooks (extensión .ipynb) para la exploración interactiva de datos y la creación de gráficos.
 
