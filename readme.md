@@ -60,10 +60,6 @@ En esta evaluación se utilizaron diversas herramientas y librerías para el an�
 
 - **Matplotlib**: [Matplotlib](https://matplotlib.org/) es una librería de trazado de gráficos en 2D para Python. Es utilizada para crear gráficos estáticos, animados e interactivos.
 
-##### Gestión de Warnings
-
-- **Warnings**: [Warnings](https://docs.python.org/3/library/warnings.html) es un módulo de la biblioteca estándar de Python utilizado para controlar la generación de warnings.
-
 ##### Creación de Muestras
 
 - **Scikit-learn**: [Scikit-learn](https://scikit-learn.org/) es una librería de aprendizaje automático en Python. Se utilizó para generar muestras del conjunto de datos.
