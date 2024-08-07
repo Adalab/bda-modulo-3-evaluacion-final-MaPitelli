@@ -36,7 +36,7 @@ En esta evaluación se utilizaron diversas herramientas y librerías para el an�
 
 #### Jupyter Notebooks
 
-![Jupyter Logo](images/jupyter_logo.png)
+<img src="images/jupyter_logo.png" alt="Jupyter Logo" width="150"/>
 
 [Jupyter Notebooks](https://jupyter.org/) En esta evaluación, se utilizaron archivos Jupyter Notebooks (extensión .ipynb) para la exploración interactiva de datos y la creación de gráficos.
 
