@@ -1,7 +1,14 @@
+### Importamos las librerías que necesitamos
+# Tratamiento de datos
+# -----------------------------------------------------------------------
 import pandas as pd
 import numpy as np
 from itertools import combinations
-from scipy.stats import kstest, spearmanr, pearsonr
+
+# Evaluar linealidad de las relaciones entre las variables y la distribución de las variables
+# ------------------------------------------------------------------------------
+import scipy.stats as stats
+from scipy.stats import kstest, shapiro, mannwhitneyu
 
 
 def identify_linearity(dataframe, column_combinations_list):
@@ -154,3 +161,85 @@ def categorize(education_level, group_a, group_b):
         return 'group_b'
     else:
         return 'Unknown'  # To handle values that do not match the defined groups
+
+
+def determine_problem_type(dataframe, metric):
+    """
+    Determines whether the problem is about proportions or means.
+    
+    Parameters:
+    - metric (str): The name of the metric to be analyzed.
+
+    Returns:
+    - str: "proportions" if the metric is binary, "means" if the metric is continuous.
+    """
+    # Check if the metric is binary
+    unique_values = dataframe[metric].dropna().unique()
+    if set(unique_values).issubset({0, 1}):
+        return "proportions"
+    else:
+        return "means"
+
+
+def normality_test(dataframe, metric, method='shapiro', alpha=0.05):
+    """
+    Performs a test to check the normality of data using Shapiro-Wilk or Kolmogorov-Smirnov.
+
+    Parameters:
+    - metric (str): The name of the metric to be analyzed.
+    - method (str): The method to use for the normality test ('shapiro' or 'ks').
+    - alpha (float): The significance level for the normality test (default is 0.05).
+
+    Returns:
+    - tuple: The test statistic and the p-value.
+    """
+    data = dataframe[metric].dropna()
+
+    if method == 'shapiro':
+        stat, p_value = shapiro(data)
+    elif method == 'ks':
+        stat, p_value = kstest(data, 'norm')
+    else:
+        raise ValueError("Unsupported method. Use 'shapiro' or 'ks'.")
+
+    if p_value > alpha:
+        print(f"The data for the metric '{metric}' follows a normal distribution (p-value = {p_value:.4f}).")
+    else:
+        print(f"The data for the metric '{metric}' does not follow a normal distribution (p-value = {p_value:.4f}).")
+
+    return stat, p_value
+
+
+def mann_whitney_test(dataframe, metric_columns, control_group, test_group, group_column='test_group', alpha=0.05):
+    """
+    Performs the Mann-Whitney U test to compare the medians of metrics between two groups in a given DataFrame.
+
+    Parameters:
+    - metric_columns (list): A list of column names representing the metrics to compare between groups.
+    - control_group (str): The name of the control group in the column specified by group_column.
+    - test_group (str): The name of the test group in the column specified by group_column.
+    - group_column (str): The name of the column that contains the group information (default is 'test_group').
+    - alpha (float): The significance level for the test (default is 0.05).
+
+    Returns:
+    - None: Prints to the console whether the medians are different or the same for each metric.
+    """
+    # Filter the DataFrame to keep only the control and test data
+    control = dataframe[dataframe[group_column] == control_group]
+    test = dataframe[dataframe[group_column] == test_group]
+
+    # Iterate over the metric columns to see if there are differences between the groups for each metric
+    for metric in metric_columns:
+        metric_control = control[metric].dropna()
+        metric_test = test[metric].dropna()
+
+        # Apply the statistic
+        u_statistic, p_value = mannwhitneyu(metric_control, metric_test)
+
+        # Print the result of the test
+        if p_value < alpha:
+            print(f"For the metric '{metric}', the medians are different (p-value = {p_value:.4f}).")
+        else:
+            print(f"For the metric '{metric}', the medians are the same (p-value = {p_value:.4f}).")
+
+
