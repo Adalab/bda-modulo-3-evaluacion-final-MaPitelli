@@ -6,12 +6,9 @@
 
 Este proyecto se divide en tres fases principales, cada una de las cuales aborda diferentes aspectos del análisis de datos y pruebas estadísticas. Aquí están los enlaces a cada fase:
 
-1. **Fase 1: Exploración y Limpieza de Datos**
-   - [Exploración Inicial y Limpieza](https://github.com/Adalab/bda-modulo-3-evaluacion-final-MaPitelli/blob/main/jupyters/phase_1.ipynb)
-2. **Fase 2: Visualización**
-   - [Visualización de Datos](https://github.com/Adalab/bda-modulo-3-evaluacion-final-MaPitelli/blob/main/jupyters/phase_2.ipynb)
-3. **Fase 3: Evaluación de Diferencias en Reservas de Vuelos por Nivel Educativo**
-   - [A/B Testing](https://github.com/Adalab/bda-modulo-3-evaluacion-final-MaPitelli/blob/main/jupyters/phase_3.ipynb)
+- [Fase 1: Exploración Inicial y Limpieza de Datos](https://github.com/Adalab/bda-modulo-3-evaluacion-final-MaPitelli/blob/main/jupyters/phase_1.ipynb)
+- [Fase 2: Visualización de Datos](https://github.com/Adalab/bda-modulo-3-evaluacion-final-MaPitelli/blob/main/jupyters/phase_2.ipynb)
+- [Fase 3: A/B Testing](https://github.com/Adalab/bda-modulo-3-evaluacion-final-MaPitelli/blob/main/jupyters/phase_3.ipynb)
 
 
 ## Objetivo 🎯
