@@ -1,5 +1,19 @@
 # Evaluación Final del Módulo 3 📊
 
+## Análisis de la Actividad de Vuelo, Nivel de Educación y Grupos de Fidelización del Cliente en una Aerolínea Canadiense ✈️
+
+## Introducción 📖
+
+Este proyecto se divide en tres fases principales, cada una de las cuales aborda diferentes aspectos del análisis de datos y pruebas estadísticas. Aquí están los enlaces a cada fase:
+
+1. **Fase 1: Exploración y Limpieza de Datos**
+   - [Exploración Inicial y Limpieza](https://github.com/Adalab/bda-modulo-3-evaluacion-final-MaPitelli/blob/main/jupyters/phase_1.ipynb)
+2. **Fase 2: Visualización**
+   - [Visualización de Datos](https://github.com/Adalab/bda-modulo-3-evaluacion-final-MaPitelli/blob/main/jupyters/phase_2.ipynb)
+3. **Fase 3: Evaluación de Diferencias en Reservas de Vuelos por Nivel Educativo**
+   - [A/B Testing](https://github.com/Adalab/bda-modulo-3-evaluacion-final-MaPitelli/blob/main/jupyters/phase_3.ipynb)
+
+
 ## Objetivo 🎯
 
 El objetivo de esta evaluación es comprobar la comprensión y habilidades en análisis de datos mediante la realización de un A/B Testing y pruebas estadísticas. Utilizaremos un conjunto de datos de clientes con diferentes niveles educativos y sus reservas de vuelos para determinar si existen diferencias significativas en el número de vuelos reservados entre los diferentes niveles educativos. Además, se evaluará la capacidad para realizar una exploración y limpieza de datos, visualización de datos y el uso de procesos ETL y Pipelines en el contexto de análisis de datos.
@@ -24,49 +38,37 @@ La evaluación consta de tres fases:
 
 ---
 
-### Herramientas y Librerías 🛠️
+### Tecnologías Utilizadas 🛠️
 
-En esta evaluación se utilizaron diversas herramientas y librerías para el análisis y visualización de datos, así como para la ejecución de pruebas estadísticas. A continuación, se detallan las principales herramientas y librerías utilizadas:
+En esta evaluación se utilizaron diversas tecnologías y librerías para el análisis y visualización de datos, así como para la ejecución de pruebas estadísticas. A continuación, se detallan las principales tecnologías utilizadas:
 
 #### Visual Studio Code
 
-<img src="images/vsc_logo.png" alt="VS Code Logo" width="100"/>
+<img src="images/vsc_logo.png" alt="VS Code Logo" width="50"/>
 
-[Visual Studio Code](https://code.visualstudio.com/) es un editor de código fuente desarrollado por Microsoft. Es una herramienta poderosa y extensible, ideal para programar en diversos lenguajes y gestionar proyectos de datos. En esta evaluación, se utilizó Visual Studio Code para escribir, ejecutar y depurar el código Python necesario para el análisis de datos y la visualización.
+[Visual Studio Code](https://code.visualstudio.com/) Editor de código utilizado para escribir y depurar el código en Python.
 
 #### Jupyter Notebooks
 
-<img src="images/jupyter_logo.png" alt="Jupyter Logo" width="100"/>
+<img src="images/jupyter_logo.png" alt="Jupyter Logo" width="50"/>
 
 [Jupyter Notebooks](https://jupyter.org/) En esta evaluación, se utilizaron archivos Jupyter Notebooks (extensión .ipynb) para la exploración interactiva de datos y la creación de gráficos.
 
-#### Librerías de Python 📖
 
-##### Tratamiento de Datos
+### Librerías de Python 📖
 
-- **Pandas**: [Pandas](https://pandas.pydata.org/) es una librería fundamental para el análisis y manipulación de datos en Python. Ofrece estructuras de datos y funciones de manipulación de datos de alto rendimiento.
-
-- **NumPy**: [NumPy](https://numpy.org/) es una librería esencial para el cálculo científico en Python. Proporciona soporte para arrays y matrices, junto con una colección de funciones matemáticas.
-
+- **Pandas**: Biblioteca de análisis de datos en Python.
+- **NumPy**: Biblioteca para computación científica en Python.
+- **SciPy**: Biblioteca para matemáticas, ciencias e ingeniería en Python.
+- **Seaborn**: Biblioteca de visualización de datos basada en Matplotlib.
+- **Matplotlib**: Biblioteca de gráficos en 2D para Python.
+- **Scikit-learn**: Biblioteca de aprendizaje automático en Python.
 - **itertools**: [itertools](https://docs.python.org/3/library/itertools.html) es un módulo de la biblioteca estándar de Python que ofrece funciones que crean iteradores eficientes. En este proyecto, se utilizó para generar combinaciones.
-
-##### Evaluación de la Linealidad y Distribución de Variables
-
-- **SciPy**: [SciPy](https://scipy.org/) es una librería que proporciona rutinas y algoritmos matemáticos y estadísticos. En esta evaluación, se utilizó para realizar pruebas estadísticas como Shapiro-Wilk y Kolmogorov-Smirnov.
-
-##### Visualización de Datos
-
-- **Seaborn**: [Seaborn](https://seaborn.pydata.org/) es una librería de visualización de datos basada en Matplotlib. Proporciona una interfaz de alto nivel para dibujar gráficos estadísticos atractivos y informativos.
-
-- **Matplotlib**: [Matplotlib](https://matplotlib.org/) es una librería de trazado de gráficos en 2D para Python. Es utilizada para crear gráficos estáticos, animados e interactivos.
-
-##### Creación de Muestras
-
-- **Scikit-learn**: [Scikit-learn](https://scikit-learn.org/) es una librería de aprendizaje automático en Python. Se utilizó para generar muestras del conjunto de datos.
 
 ##### Importación de Módulos Propios 👩🏻‍💻
 
-Durante esta evaluación, también se trabajó con módulos Python personalizados, lo cual facilitó la organización y reutilización del código. Estos módulos se importaron y utilizaron para diversas funciones y análisis específicos.
+Durante esta evaluación, también se trabajó con módulos Python personalizados, lo cual facilitó la organización y reutilización del código. Estos módulos se importaron y utilizaron para diversas funciones y análisis específicos. Puedes ver el módulo propio [aquí](https://github.com/Adalab/bda-modulo-3-evaluacion-final-MaPitelli/blob/main/jupyters/src/support.py).
+
 
 ---
 
@@ -87,9 +89,28 @@ Durante esta evaluación, se cubrieron varios temas clave relacionados con la ma
 - **Consistencia de Datos**: Verificación de la consistencia y corrección de los datos para garantizar su coherencia.
 - **Ajuste de Tipos de Datos**: Realización de ajustes o conversiones necesarias en las columnas (por ejemplo, cambiar tipos de datos) para asegurar la adecuación de los datos para el análisis estadístico.
 
+- **Pandas**:
+  - `pd.read_csv()`: Lectura de archivos CSV.
+  - `df.dropna()`: Eliminación de valores nulos.
+  - `df.groupby()`: Agrupación de datos.
+  - `df.describe()`: Cálculo de estadísticas descriptivas.
+  - `df.apply(lambda x: ...)`: Aplicación de funciones lambda para transformar datos.
+
 ### 2. Visualización de Datos
 
-Se utilizaron diversas técnicas de visualización para responder preguntas específicas y explorar las relaciones entre las variables. A continuación, se presentan dos ejemplos de gráficos generados durante la evaluación:
+Se utilizaron diversas técnicas de visualización para responder preguntas específicas y explorar las relaciones entre las variables. 
+
+- **Seaborn**:
+  - `sns.histplot()`: Creación de histogramas.
+  - `sns.scatterplot()`: Creación de gráficos de dispersión.
+
+- **Matplotlib**:
+  - `plt.plot()`: Creación de gráficos de línea.
+  - `plt.bar()`: Creación de gráficos de barras.
+
+- **Análisis de Gráficos**: Interpretación de las gráficas para extraer conclusiones y responder preguntas específicas del análisis.
+
+A continuación, se presentan dos ejemplos de gráficos generados durante la evaluación:
 
 #### Distribución de la cantidad de vuelos reservados por mes
 
@@ -111,16 +132,35 @@ Se utilizaron diversas técnicas de visualización para responder preguntas espe
 
 - **Uso de `apply` y Funciones Lambda**: Utilización de la función `apply` junto con funciones lambda para transformar datos y aplicar funciones personalizadas a los DataFrames. Esto permitió realizar operaciones complejas de manera concisa y eficiente.
 
+### Ejemplo de Transformación de Datos con Funciones Lambda
+
+```python
+# Aplicación de una función lambda para categorizar niveles educativos
+df_filtered_ab['test_group'] = df_filtered_ab['education'].apply(lambda x: sp.categorize(x, group_a, group_b))
+```
+
 #### Pruebas Estadísticas
+
+- **SciPy**:
+  - `stats.shapiro()`: Prueba de normalidad de Shapiro-Wilk.
+  - `stats.kstest()`: Prueba de Kolmogorov-Smirnov.
+  - `stats.mannwhitneyu()`: Prueba de Mann-Whitney U.
 
 - **Prueba de Normalidad**: Realización de pruebas de normalidad utilizando los métodos de Shapiro-Wilk y Kolmogorov-Smirnov para evaluar la distribución de los datos.
 - **Prueba de Mann-Whitney U**: Aplicación de la prueba de Mann-Whitney U para comparar las medianas de las métricas entre dos grupos y determinar si existe una diferencia significativa en el número de vuelos reservados entre los diferentes niveles educativos.
 
-### 4. Creación e Interpretación de Gráficas
-
-- **Seaborn y Matplotlib**: Creación de diversas gráficas utilizando las librerías Seaborn y Matplotlib para visualizar y analizar los datos de manera efectiva.
-- **Análisis de Gráficos**: Interpretación de las gráficas para extraer conclusiones y responder preguntas específicas del análisis.
 
 ---
 
 Estos temas demuestran un enfoque integral para el análisis de datos, abarcando desde la exploración y limpieza hasta la visualización y análisis estadístico. Esta metodología permite obtener una comprensión detallada de los datos y tomar decisiones basadas en resultados sólidos y bien fundamentados. Para ver más ejemplos de este tipo de análisis y explorar en detalle mi trabajo, te invito a visitar el repositorio del proyecto: ➡️ [Enlace al repositorio](https://github.com/Adalab/bda-modulo-3-evaluacion-final-MaPitelli/tree/main/jupyters)
+
+
+## Información de Contacto 📞
+
+Para cualquier consulta, no dudes en contactarme:
+
+- **Nombre**: [Maíra Pitelli]
+- **Email**: [mairapitelli@hotmail.com]
+- **LinkedIn**: [Tu Perfil de LinkedIn](https://www.linkedin.com/in/mairapitelli/)
+
+¡Gracias por revisar mi proyecto! 😊
