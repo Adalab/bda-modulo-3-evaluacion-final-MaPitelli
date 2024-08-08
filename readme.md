@@ -161,6 +161,6 @@ Para cualquier consulta, no dudes en contactarme:
 
 - **Nombre**: [Maíra Pitelli]
 - **Email**: [mairapitelli@hotmail.com]
-- **LinkedIn**: [Tu Perfil de LinkedIn](https://www.linkedin.com/in/mairapitelli/)
+- **LinkedIn**: [LinkedIn](https://www.linkedin.com/in/mairapitelli/)
 
 ¡Gracias por revisar mi proyecto! 😊
