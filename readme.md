@@ -39,13 +39,9 @@ La evaluación consta de tres fases:
 
 En esta evaluación se utilizaron diversas tecnologías y librerías para el análisis y visualización de datos, así como para la ejecución de pruebas estadísticas. A continuación, se detallan las principales tecnologías utilizadas:
 
-#### <img src="images/vsc_logo.png" alt="VS Code Logo" width="30"/> - Visual Studio Code     
+#### <img src="images/vsc_logo.png" alt="VS Code Logo" width="30"/> [Visual Studio Code](https://code.visualstudio.com/) Editor de código utilizado para escribir y depurar el código en Python.
 
-[Visual Studio Code](https://code.visualstudio.com/) Editor de código utilizado para escribir y depurar el código en Python.
-
-#### <img src="images/jupyter_logo.png" alt="Jupyter Logo" width="30"/> - Jupyter Notebooks      
-
-[Jupyter Notebooks](https://jupyter.org/) En esta evaluación, se utilizaron archivos Jupyter Notebooks (extensión .ipynb) para la exploración interactiva de datos y la creación de gráficos.
+#### <img src="images/jupyter_logo.png" alt="Jupyter Logo" width="30"/> [Jupyter Notebooks](https://jupyter.org/) En esta evaluación, se utilizaron archivos Jupyter Notebooks (extensión .ipynb) para la exploración interactiva de datos y la creación de gráficos.
 
 
 ### Librerías de Python 📖
